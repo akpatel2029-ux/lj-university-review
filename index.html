@@ -5,19 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LJ University - Subject Review Portal</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <div class="header-inner">
       <div class="logo-area">
-        <img src="https://cdn.npfs.co/uploads/college/image/6017ace030696833218366_LJ_Logo.png"
-             alt="LJ University Logo"
-             class="lj-logo"
-             onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';" />
-        <div id="logo-fallback" class="logo-fallback" style="display:none;">LJ</div>
+        <div class="lj-logo-svg">
+          <svg viewBox="0 0 120 56" xmlns="http://www.w3.org/2000/svg" width="108" height="50">
+            <rect width="120" height="56" rx="10" fill="#1b5e20"/>
+            <text x="12" y="40" font-family="Georgia,serif" font-size="34" font-weight="900" fill="#ffffff">L</text>
+            <circle cx="38" cy="40" r="3" fill="#a5d6a7"/>
+            <text x="44" y="40" font-family="Georgia,serif" font-size="34" font-weight="900" fill="#ffffff">J</text>
+            <circle cx="69" cy="40" r="3" fill="#a5d6a7"/>
+            <rect x="12" y="46" width="96" height="2" rx="1" fill="#a5d6a7"/>
+            <text x="60" y="54" font-family="Arial,sans-serif" font-size="6.5" font-weight="700" fill="#c8e6c9" text-anchor="middle" letter-spacing="2">UNIVERSITY</text>
+          </svg>
+        </div>
         <div class="header-text">
           <h1>LJ University</h1>
           <p class="tagline">Department of Computer Science &amp; Engineering</p>
@@ -29,7 +33,6 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-inner">
       <h2>Student Project Reviews</h2>
@@ -37,31 +40,26 @@
     </div>
   </section>
 
-  <!-- MAIN CONTENT -->
   <main>
     <div class="subjects-grid">
 
-      <!-- Machine Learning Card -->
       <div class="subject-card" onclick="openModal('ml')">
         <div class="card-top ml-top">
           <div class="card-icon-wrap">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="3"/>
-              <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
-            </svg>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
           </div>
           <div class="card-label">Subject</div>
         </div>
         <div class="card-body">
           <h3>Machine Learning</h3>
-          <p>KNN Algorithm â€” Gym Rat Level Prediction</p>
+          <p>KNN Algorithm - Gym Rat Level Prediction</p>
           <div class="card-meta">
             <span class="meta-item">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
               Kalathiya Arpit
             </span>
             <span class="meta-item">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
               2nd November
             </span>
           </div>
@@ -72,27 +70,23 @@
         </div>
       </div>
 
-      <!-- Research Methodology Card -->
       <div class="subject-card" onclick="openModal('rm')">
         <div class="card-top rm-top">
           <div class="card-icon-wrap">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-            </svg>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           </div>
           <div class="card-label">Subject</div>
         </div>
         <div class="card-body">
           <h3>Research Methodology</h3>
-          <p>Group Project â€” Research &amp; Analysis</p>
+          <p>Group Project - Research and Analysis</p>
           <div class="card-meta">
             <span class="meta-item">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               3 Students
             </span>
             <span class="meta-item">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
               2nd November
             </span>
           </div>
@@ -106,26 +100,21 @@
     </div>
   </main>
 
-  <!-- ===================== ML MODAL ===================== -->
-  <div id="modal-ml" class="modal-overlay" onclick="closeModalOutside(event, 'ml')">
+  <!-- ML MODAL -->
+  <div id="modal-ml" class="modal-overlay" onclick="closeModalOutside(event,'ml')">
     <div class="modal-box">
       <button class="close-btn" onclick="closeModal('ml')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
-
       <div class="modal-header ml-grad">
         <div class="modal-header-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"/>
-            <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
-          </svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
         </div>
         <div>
           <h2>Machine Learning</h2>
           <p>KNN Algorithm Project</p>
         </div>
       </div>
-
       <div class="modal-content">
         <div class="section-label">Student Information</div>
         <div class="info-grid">
@@ -135,7 +124,7 @@
           </div>
           <div class="info-item">
             <span class="info-key">Roll Number</span>
-            <span class="info-val badge-green">D21</span>
+            <span class="info-val"><span class="badge-green">D21</span></span>
           </div>
           <div class="info-item">
             <span class="info-key">Division</span>
@@ -145,21 +134,17 @@
             <span class="info-key">Faculty</span>
             <span class="info-val">Aym</span>
           </div>
-          <div class="info-item">
+          <div class="info-item full-width">
             <span class="info-key">Review Date</span>
             <span class="info-val">2nd November</span>
           </div>
         </div>
-
-        <div class="section-label" style="margin-top:22px;">Project Submissions</div>
+        <div class="section-label" style="margin-top:20px;">Project Submissions</div>
         <div class="link-cards">
-
-          <a class="lnk-card github-lnk" href="https://github.com/akpatel2029-ux/gym-rat-level-prediction-knn" target="_blank" rel="noopener">
+          <a class="lnk-card github-lnk" href="https://github.com/akpatel2029-ux/gym-rat-level-prediction-knn" target="_blank" rel="noopener noreferrer">
             <div class="lnk-left">
               <div class="lnk-ico">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
-                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
-                </svg>
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="white"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
               </div>
               <div class="lnk-info">
                 <span class="lnk-title">GitHub Repository</span>
@@ -167,58 +152,45 @@
               </div>
             </div>
             <div class="lnk-arrow">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </div>
           </a>
-
-          <a class="lnk-card ppt-lnk" href="https://docs.google.com/presentation/d/1HNrOQpKVKdLWTqe9DHNt07MkejolaC1h/edit?usp=drivesdk&ouid=101567255342927774559&rtpof=true&sd=true" target="_blank" rel="noopener">
+          <a class="lnk-card ppt-lnk" href="https://docs.google.com/presentation/d/1HNrOQpKVKdLWTqe9DHNt07MkejolaC1h/edit" target="_blank" rel="noopener noreferrer">
             <div class="lnk-left">
               <div class="lnk-ico">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14 2 14 8 20 8"/>
-                  <line x1="16" y1="13" x2="8" y2="13"/>
-                  <line x1="16" y1="17" x2="8" y2="17"/>
-                  <polyline points="10 9 9 9 8 9"/>
-                </svg>
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
               </div>
               <div class="lnk-info">
                 <span class="lnk-title">PPT Presentation</span>
-                <span class="lnk-sub">Google Slides â€” View Presentation</span>
+                <span class="lnk-sub">Google Slides - View Slides</span>
               </div>
             </div>
             <div class="lnk-arrow">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </div>
           </a>
-
         </div>
       </div>
     </div>
   </div>
 
-  <!-- ===================== RM MODAL ===================== -->
-  <div id="modal-rm" class="modal-overlay" onclick="closeModalOutside(event, 'rm')">
+  <!-- RM MODAL -->
+  <div id="modal-rm" class="modal-overlay" onclick="closeModalOutside(event,'rm')">
     <div class="modal-box">
       <button class="close-btn" onclick="closeModal('rm')">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
-
       <div class="modal-header rm-grad">
         <div class="modal-header-icon">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-          </svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         </div>
         <div>
           <h2>Research Methodology</h2>
           <p>Group Project Review</p>
         </div>
       </div>
-
       <div class="modal-content">
-        <div class="info-grid" style="margin-bottom:20px;">
+        <div class="info-grid" style="margin-bottom:18px;">
           <div class="info-item">
             <span class="info-key">Faculty</span>
             <span class="info-val">MDjTm</span>
@@ -228,7 +200,6 @@
             <span class="info-val">2nd November</span>
           </div>
         </div>
-
         <div class="section-label">Group Members</div>
         <div class="students-table">
           <div class="st-row st-header">
@@ -248,31 +219,22 @@
             <span class="st-name">Pratik Savaliya</span>
           </div>
         </div>
-
-        <div class="section-label" style="margin-top:22px;">Project Submission</div>
+        <div class="section-label" style="margin-top:20px;">Project Submission</div>
         <div class="link-cards">
-
-          <a class="lnk-card ppt-lnk" href="https://docs.google.com/presentation/d/10tm9n4JvJox_7nW_84uKGsL7lQN_uMjb/edit?usp=drivesdk&ouid=101567255342927774559&rtpof=true&sd=true" target="_blank" rel="noopener">
+          <a class="lnk-card ppt-lnk" href="https://docs.google.com/presentation/d/10tm9n4JvJox_7nW_84uKGsL7lQN_uMjb/edit" target="_blank" rel="noopener noreferrer">
             <div class="lnk-left">
               <div class="lnk-ico">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14 2 14 8 20 8"/>
-                  <line x1="16" y1="13" x2="8" y2="13"/>
-                  <line x1="16" y1="17" x2="8" y2="17"/>
-                  <polyline points="10 9 9 9 8 9"/>
-                </svg>
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="white" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
               </div>
               <div class="lnk-info">
                 <span class="lnk-title">PPT Presentation</span>
-                <span class="lnk-sub">Google Slides â€” View Presentation</span>
+                <span class="lnk-sub">Google Slides - View Slides</span>
               </div>
             </div>
             <div class="lnk-arrow">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </div>
           </a>
-
         </div>
       </div>
     </div>
@@ -280,12 +242,20 @@
 
   <footer>
     <div class="footer-inner">
-      <img src="https://cdn.npfs.co/uploads/college/image/6017ace030696833218366_LJ_Logo.png"
-           alt="LJ University" class="footer-logo"
-           onerror="this.style.display='none'" />
+      <div class="footer-logo-svg">
+        <svg viewBox="0 0 90 42" xmlns="http://www.w3.org/2000/svg" width="68" height="32">
+          <rect width="90" height="42" rx="7" fill="rgba(255,255,255,0.15)"/>
+          <text x="8" y="30" font-family="Georgia,serif" font-size="24" font-weight="900" fill="#ffffff">L</text>
+          <circle cx="27" cy="30" r="2.5" fill="#a5d6a7"/>
+          <text x="32" y="30" font-family="Georgia,serif" font-size="24" font-weight="900" fill="#ffffff">J</text>
+          <circle cx="50" cy="30" r="2.5" fill="#a5d6a7"/>
+          <rect x="8" y="34" width="74" height="1.5" rx="1" fill="#a5d6a7"/>
+          <text x="45" y="40" font-family="Arial,sans-serif" font-size="5" font-weight="700" fill="#c8e6c9" text-anchor="middle" letter-spacing="2">UNIVERSITY</text>
+        </svg>
+      </div>
       <div>
         <p class="footer-name">LJ University</p>
-        <p class="footer-sub">&copy; 2024 &nbsp;|&nbsp; Computer Science &amp; Engineering &nbsp;|&nbsp; Subject Review Portal</p>
+        <p class="footer-sub">2024 | Computer Science and Engineering | Subject Review Portal</p>
       </div>
     </div>
   </footer>
